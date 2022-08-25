@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- Upload section-->
+    <div>
+        <h3>Upload Section</h3> <br>
+        <!-- action to the /upload route-->
+        <form action="/upload" 
+                method="post"
+                enctype="multipart/form-data">
+            File to be uploaded: <input type="file" 
+                                        name="uploadFile" 
+                                        id=""> 
+            <br><br>
+            Password: <input type="password" name="password">
+            <button type="submit">Upload</button>
+        </form>
+        <br>
+    </div>
+    <!-- Download Section-->
+    <div>
+        <h3>Download Section</h3> <br>
+        <!-- action to the /download route-->
+        <form action="/download" 
+        method="post"
+        enctype="multipart/form-data"
+        >
+            File name: <input type="text" name="fileName">
+            <br><br>
+            Password: <input type="password" name="password">
+            <button type="submit">Download</button>
+        </form>
+    </div>
+    <!--Delete Section-->
+    <div>
+        <h3>Delete Section</h3> <br>
+        <!-- action to the /download route-->
+        <form action="/delete" 
+        method="post"
+        enctype="multipart/form-data"
+        >
+            File name: <input type="text" name="fileName">
+            <br><br>
+            Password: <input type="password" name="password">
+            <button type="submit">Delete</button>
+        </form>
+        <br><br>
+    </div>
+    <!--Archive-->
+    <div>
+        <br><br>
+        <a href="/archive" style="text-decoration: none; border: 1px solid #000; padding: 10px; margin-left: 50%; color: #000; font-weight: bold;">Archive</a>
+    </div>
+</body>
+</html>
